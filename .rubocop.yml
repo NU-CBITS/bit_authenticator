@@ -1,0 +1,12 @@
+AllCops:
+  Exclude:
+    - bin/**/*
+    - config/**/*
+    - db/**/*
+    - spec/dummy/**/*
+    - vendor/**/*
+  RunRailsCops: true
+
+Documentation:
+  Exclude:
+    - spec/**/*
