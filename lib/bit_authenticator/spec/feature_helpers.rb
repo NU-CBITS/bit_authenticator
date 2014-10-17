@@ -17,7 +17,7 @@ module BitAuthenticator
         visit "/#{ plural_resource }/sign_in"
         fill_in 'Email', with: resource.email
         fill_in 'Password', with: (password || 'secrets!')
-        click_on 'Sign in'
+        find('input[type="submit"]').click
       end
     end
   end
