@@ -5,13 +5,13 @@ module BitAuthenticator
     class FeatureSpec
       include FeatureHelpers
 
-      def visit(path)
+      def visit(_path)
       end
 
-      def fill_in(field, options)
+      def fill_in(_field, _options)
       end
 
-      def click_on(link)
+      def click_on(_link)
       end
     end
 
