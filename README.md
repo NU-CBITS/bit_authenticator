@@ -67,6 +67,16 @@ Now use the helper methods in controller specs:
       end
     end
 
+## Use quick sign in helper in development
+
+First mount the engine routes in `config/routes.rb`:
+
+    mount BitAuthenticator::Engine, at: 'bit_authenticator'
+
+Sign in a resource (in this example a User) by requesting:
+
+    http://my.example-application/bit_authenticator/quick_sign_in?resource_type=user&user_id=123
+
 ## Development
 
 ### Clone this repository
