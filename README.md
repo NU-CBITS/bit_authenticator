@@ -25,7 +25,7 @@ Then include the helpers in all feature specs:
 
     RSpec.configure do |config|
       ...
-      config.include BitAuthenticator::Spec::FeatureHelpers
+      config.include BitAuthenticator::Spec::FeatureHelpers, type: :feature
     end
 
 Now use the helper methods in feature specs:
