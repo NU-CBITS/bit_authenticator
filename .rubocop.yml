@@ -10,3 +10,6 @@ AllCops:
 Documentation:
   Exclude:
     - spec/**/*
+
+SpaceInsideStringInterpolation:
+  EnforcedStyle: space
