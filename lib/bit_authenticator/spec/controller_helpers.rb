@@ -4,14 +4,24 @@ module BitAuthenticator
     module ControllerHelpers
       # Stub the authentication mechanism
       def sign_in(type, resource)
+        stub_authenticate! type, resource
+        stub_devise_methods type, resource
+      end
+
+      private
+
+      def stub_authenticate!(type, resource)
         if resource.nil?
-          expect(request.env['warden']).to receive(:authenticate!)
+          allow(request.env['warden']).to receive(:authenticate!)
             .and_throw(:warden, scope: :"#{ type }")
-          controller.stub :"current_#{ type }" => nil
         else
-          expect(request.env['warden']).to receive(:authenticate!) { resource }
-          allow(controller).to receive("current_#{ type }") { resource }
+          allow(request.env['warden']).to receive(:authenticate!) { resource }
         end
+      end
+
+      def stub_devise_methods(type, resource)
+        allow(controller).to receive("current_#{ type }") { resource }
+        allow(controller).to receive("#{ type }_signed_in?") { true }
       end
     end
   end
