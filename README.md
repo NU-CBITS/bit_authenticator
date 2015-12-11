@@ -86,7 +86,9 @@ end
 First mount the engine routes in `config/routes.rb`:
 
 ```ruby
-mount BitAuthenticator::Engine, at: 'bit_authenticator'
+if Rails.env == 'development'
+  mount BitAuthenticator::Engine, at: 'bit_authenticator'
+end
 ```
 
 Sign in a resource (in this example a User) by requesting:
