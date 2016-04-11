@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'active_support'
 
 module BitAuthenticator
@@ -12,7 +13,7 @@ module BitAuthenticator
       #     sign_in :user, my_user, 'password123'
       def sign_in(resource_type, resource, password = nil)
         plural_resource = Class.new.extend(ActiveSupport::Inflector)
-                          .pluralize(resource_type)
+                               .pluralize(resource_type)
         visit "/#{ plural_resource }/sign_out"
         visit "/#{ plural_resource }/sign_in"
         fill_in 'Email', with: resource.email

@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'bit_authenticator/spec/feature_helpers'
 
 module BitAuthenticator
