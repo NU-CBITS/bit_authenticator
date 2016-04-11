@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module BitAuthenticator
   module Spec
     # Helper methods to be included in controller specs.

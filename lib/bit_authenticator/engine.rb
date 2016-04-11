@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module BitAuthenticator
   # Mountable application.
   class Engine < ::Rails::Engine

@@ -5,7 +5,10 @@ AllCops:
     - db/**/*
     - spec/dummy/**/*
     - vendor/**/*
-  RunRailsCops: true
+  TargetRubyVersion: 2.3
+
+Rails:
+  Enabled: true
 
 Documentation:
   Exclude:

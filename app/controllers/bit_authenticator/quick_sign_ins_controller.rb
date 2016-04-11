@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module BitAuthenticator
   # Used ONLY in development to speed up manual logins.
   class QuickSignInsController < ApplicationController
