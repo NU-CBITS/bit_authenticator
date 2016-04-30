@@ -100,3 +100,9 @@ Sign in a resource (in this example a User) by requesting:
 ### Clone this repository
 
     git clone https://github.com/cbitstech/bit_authenticator.git
+
+### Run tests and linters
+
+```console
+bundle exec rake
+```
