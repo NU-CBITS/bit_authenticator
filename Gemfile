@@ -14,10 +14,4 @@ gemspec
 # To use debugger
 # gem 'debugger'
 
-group :development, :test do
-  gem 'rubocop', '~> 0.26'
-end
-
-group :development do
-  gem 'brakeman', require: false
-end
+gem 'rails', '~> 4.2.6'
