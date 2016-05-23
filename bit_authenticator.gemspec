@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.version     = BitAuthenticator::VERSION
   s.authors     = ['Eric Carty-Fickes']
   s.email       = ['ericcf@northwestern.edu']
-  s.homepage    = 'https://github.com/cbitstech/bit_authenticator'
+  s.homepage    = 'https://github.com/NU-CBITS/bit_authenticator'
   s.summary     = 'Authentication related functionality for BIT projects.'
   s.description = 'Authentication related functionality for BIT projects.'
   s.license     = 'MIT'

@@ -6,7 +6,7 @@ Add it to the Gemfile:
 
 ```ruby
 gem 'bit_authenticator',
-    git: 'https://github.com/cbitstech/bit_authenticator.git'
+    git: 'https://github.com/NU-CBITS/bit_authenticator.git'
 ```
 
 install it:
@@ -99,7 +99,7 @@ Sign in a resource (in this example a User) by requesting:
 
 ### Clone this repository
 
-    git clone https://github.com/cbitstech/bit_authenticator.git
+    git clone https://github.com/NU-CBITS/bit_authenticator.git
 
 ### Run tests and linters
 
