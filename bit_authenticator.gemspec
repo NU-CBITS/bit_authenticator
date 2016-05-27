@@ -18,6 +18,11 @@ Gem::Specification.new do |s|
   s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile',
                 'README.md']
 
+  s.add_runtime_dependency 'actionpack', '~> 5.0.0.rc1'
+  s.add_runtime_dependency 'railties', '~> 5.0.0.rc1'
+  s.add_runtime_dependency 'rspec', '~> 3.5.0.beta3'
+  s.add_runtime_dependency 'rspec-mocks', '~> 3.5.0.beta3'
+
   s.add_development_dependency 'rspec-rails', '~> 3.5.0.beta3'
   s.add_development_dependency 'rubocop', '~> 0.39.0'
   s.add_development_dependency 'brakeman'
