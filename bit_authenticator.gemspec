@@ -19,6 +19,6 @@ Gem::Specification.new do |s|
                 'README.md']
 
   s.add_development_dependency 'rspec-rails', '~> 3.5.0.beta3'
-  s.add_development_dependency 'rubocop', '~> 0.39.0'
+  s.add_development_dependency 'rubocop', '= 0.40'
   s.add_development_dependency 'brakeman'
 end
