@@ -24,6 +24,6 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'rspec-mocks', '~> 3.5.0.beta3'
 
   s.add_development_dependency 'rspec-rails', '~> 3.5.0.beta3'
-  s.add_development_dependency 'rubocop', '~> 0.39.0'
+  s.add_development_dependency 'rubocop', '= 0.40'
   s.add_development_dependency 'brakeman'
 end
